@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PngEditor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="400">
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Title="MainWindow" Height="400" Width="350">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.ColumnSpan="3" Grid.Column="0" HorizontalAlignment="Center"
+                Background="White" Width="335" Height="385" VerticalAlignment="Center"
+                CornerRadius="10">
+            <StackPanel>
+
+                <Button Width="30" Height="30"></Button>
+                    <TextBox Height="30" Width="180"></TextBox>
+                <TextBox Height="30" Width="180"></TextBox>
+               
+                    
+                
+
+                <Button Width="100" Height="30"/>
+               
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>
